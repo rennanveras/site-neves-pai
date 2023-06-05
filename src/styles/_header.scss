@@ -1,0 +1,22 @@
+@use 'variables';
+
+.navbar{
+    background-color: variables.$colorPrimary;
+
+    &-brand{
+        font-family: variables.$fontSegundary;
+    }
+
+    .nav-link{
+        color: variables.$colorWhite;
+
+        &.active{
+            background-color: variables.$colorWhiteLight;
+            color: variables.$colorPrimary;
+        }
+    }
+
+    &-toggler{
+        background-color: #f1f1f1;
+    }
+}

@@ -1,0 +1,12 @@
+@use 'variables';
+
+.habilidades{
+    .card{
+        background-image: radial-gradient(circle, variables.$colorBlueLight, variables.$colorBlue);
+
+        .card-text{
+            color: variables.$textGray;
+        }
+    }
+
+}

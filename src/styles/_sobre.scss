@@ -1,0 +1,12 @@
+@use 'variables';
+
+.sobre{
+    background-image: linear-gradient(180deg, variables.$colorPrimary, #02182e);
+    
+    .row{
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+}

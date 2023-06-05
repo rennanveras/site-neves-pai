@@ -1,0 +1,36 @@
+@use 'variables';
+
+.footer{
+    background-color: variables.$colorBlue;
+
+    &__social{
+        border-top: 1px solid variables.$colorWhite;
+        border-bottom: 1px solid variables.$colorWhite;     
+        &__item{
+            transition: filter 0.2s ease-in;
+            &:hover{
+                filter: invert(.3);
+            }
+        }
+    }
+
+    &__email{
+        text-decoration: none;
+        transition: filter 0.2s ease-in;
+        &:hover{
+            text-decoration: underline;
+            filter: invert(.2);
+        }
+    }
+    .copy{
+        color: #bebebe;
+        
+        a{
+            color: #bebebe;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

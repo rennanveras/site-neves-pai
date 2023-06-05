@@ -1,5 +1,30 @@
 @use 'variables';
+@use 'header';
+@use 'hero';
+@use 'habilidades';
+@use 'sobre';
+@use 'podcast';
+@use 'livro';
+@use 'footer';
 
 *{
     font-family: variables.$fontPrimary;
+    text-decoration: none;
+    list-style: none;
 }
+
+.font-segundary{
+    font-family: variables.$fontSegundary;
+}
+
+.botao{
+    white-space: nowrap;
+    background-color: variables.$colorYellow;
+    border-radius: 5px;
+    &:hover{
+        background-color:lighten(variables.$colorYellow,10%);
+    }
+}
+
+
+

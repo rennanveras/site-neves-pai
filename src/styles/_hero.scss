@@ -1,0 +1,43 @@
+
+.hero{
+    background-image: url(../img/bg/bg-blue.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 7, 69, 0.75);
+    }
+    img{
+        width: 300px;
+    }
+
+    .list-hero{
+        line-height: 20px;
+    }
+
+    .row{
+        position: relative;
+    }
+
+    &-col-left{
+        text-shadow: 1px 1px 1px #777;
+
+
+        &__social-media{
+
+            i{
+                transition: all .5s;
+                &:hover{
+                    color: #CCC;
+                }
+            }
+        }
+    }
+}
